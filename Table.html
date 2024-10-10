@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="Images/Keyboard-Title-Icon.jpg" class="img-fluid" type="image/x-icon">
+    <title>JavaScript KeyCode</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Keycode.css" />
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- FONTAWSOME ICONS -->
+    <script src="https://kit.fontawesome.com/1f4ff04947.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+        <!-- ROW-1 -->
+        <div class="row">
+            <!-- COL-1   -->
+            <div class="col-12" id="Header">
+
+                <!-- Heading-Name/Icon -->
+                <div>
+                    <span><i class="fa-regular fa-keyboard" id="KeyboardIcon"></i>
+                    </span>
+                    <span>KeyCoder</span>
+                </div>
+            </div>
+            <!-- END COL-1 ROW-1 -->
+        </div>
+        <!-- END ROW-1 -->
+
+        <!-- START ROW-2 -->
+        <div class="row">
+            <!-- Col-1 ROW -2 -->
+            <!-- TABLE/Accordion -->
+            <div class="col-12">
+                <!-- TableData -->
+                <div id="TableData">
+
+                    <h2 id="TableHeading">This is a table of all key Code and their associated data</h2>
+
+                    <p id="TableInfo"><i class="fa-solid fa-circle-exclamation" id="TableInfoIcon"></i>This table is
+                        based on the US standard 101 Keyboard the value may very based on a specific hardware.</p>
+
+                    <!-- Input Field Search -->
+                    <input type="text" placeholder="Search any key here" class="input ms-5 mb-5" id="Input-field" name="">
+
+                    <!--Start Table-->
+                    <table class="table table-responsive">
+                        <!--Table Header-->
+                        <thead id="">
+                            <tr>
+                                <th scope="col" class="HeaderItem">KeyCode</th>
+                                <th scope="col" class="HeaderItem">Key</th>
+                                <th scope="col" class="HeaderItem">Code</th>
+                                <th scope="col" class="HeaderItem">Unicode</th>
+                                <th scope="col" class="HeaderItem">Description</th>
+                            </tr>
+                        </thead>
+                        <!--END Table Header-->
+
+                        <!--Table Body-->
+                        <tbody>
+
+                            <!-- ROW-1 -->
+                            <tr class="RowTable">
+                                <td></td>
+                                <td>Unidentified</td>
+                                <td>Unidentified</td>
+                                <td></td>
+                                <td>These keys do not have a key code</td>
+                            </tr>
+
+                            <!-- ROW-2 -->
+                            <tr class="RowTable">
+                                <td>3</td>
+                                <td>Cancel</td>
+                                <td>Pause</td>
+                                <td></td>
+                                <td>break</td>
+                            </tr>
+
+                            <!-- ROW-3 -->
+                            <tr class="RowTable">
+                                <td>8</td>
+                                <td>Backspace</td>
+                                <td>Backspace</td>
+                                <td>⌫</td>
+                                <td>backspace / delete</td>
+                            </tr class="RowTable">
+
+                            <!-- ROW-4 -->
+                            <tr class="RowTable">
+                                <td>9</td>
+                                <td>Tab</td>
+                                <td>Tab</td>
+                                <td>↹</td>
+                                <td>tab</td>
+                            </tr>
+
+                            <!-- ROW-5 -->
+                            <tr class="RowTable">
+                                <td>12</td>
+                                <td>Clear</td>
+                                <td>NumLock</td>
+                                <td>⌧</td>
+                                <td>clear</td>
+                            </tr>
+
+                            <!-- ROW-6 -->
+                            <tr class="RowTable">
+                                <td>13</td>
+                                <td>Enter</td>
+                                <td>Enter</td>
+                                <td>↵</td>
+                                <td>Enter / Return</td>
+                            </tr>
+
+
+                            <!-- ROW-7 -->
+                            <tr class="RowTable">
+                                <td>16</td>
+                                <td>Shift</td>
+                                <td>ShiftLeft</td>
+                                <td>⇧</td>
+                                <td>shift</td>
+                            </tr>
+
+
+                            <!-- ROW-8 -->
+                            <tr class="RowTable">
+                                <td>16</td>
+                                <td>Shift</td>
+                                <td>ShiftRight</td>
+                                <td>⇧</td>
+                                <td>shift</td>
+                            </tr>
+
+                            <!-- ROW-9 -->
+                            <tr class="RowTable">
+                                <td>17</td>
+                                <td>Control</td>
+                                <td>ControlLeft</td>
+                                <td>^</td>
+                                <td>ctrl</td>
+                            </tr>
+
+                            <!-- ROW-10 -->
+                            <tr class="RowTable">
+                                <td>17</td>
+                                <td class="KeyoK">Control</td>
+                                <td>ControlRight</td>
+                                <td>^</td>
+                                <td>ctrl</td>
+                            </tr>
+
+                            <!-- ROW-11 -->
+                            <tr class="RowTable">
+                                <td>18</td>
+                                <td class="KeyoK">Alt</td>
+                                <td>AltLeft</td>
+                                <td>⎇ / ⌥</td>
+                                <td>Alt / Option</td>
+                            </tr>
+                            <!-- ROW-12 -->
+                            <tr class="RowTable">
+                                <td>18</td>
+                                <td>Alt</td>
+                                <td>AltRight</td>
+                                <td>⎇ / ⌥</td>
+                                <td>Alt / Option</td>
+                            </tr>
+                            <!-- ROW-13 -->
+                            <tr class="RowTable">
+                                <td>19</td>
+                                <td>Pause</td>
+                                <td>Pause</td>
+                                <td></td>
+                                <td>pause/breal</td>
+                            </tr>
+                            <!-- ROW-14 -->
+                            <tr class="RowTable">
+                                <td>20</td>
+                                <td>Capslock</td>
+                                <td>CapsLock</td>
+                                <td>⇪</td>
+                                <td>caps lock</td>
+                            </tr>
+                            <!-- ROW-15 -->
+                            <tr class="RowTable">
+                                <td>21</td>
+                                <td>Unidentified</td>
+                                <td>Lang1</td>
+                                <td></td>
+                                <td>hangul</td>
+                            </tr>
+                            <!-- ROW-16 -->
+                            <tr class="RowTable">
+                                <td>25</td>
+                                <td>Unidentified</td>
+                                <td>Lang2</td>
+                                <td></td>
+                                <td>hanja</td>
+                            </tr>
+                            <!-- ROW-17 -->
+                            <tr class="RowTable">
+                                <td>27</td>
+                                <td>Escape</td>
+                                <td>Escape</td>
+                                <td>⎋</td>
+                                <td>escape</td>
+                            </tr>
+
+                            <!-- ROW-18 -->
+                            <tr class="RowTable">
+                                <td>28</td>
+                                <td>henkan</td>
+                                <td></td>
+                                <td></td>
+                                <td>conversion</td>
+                            </tr>
+
+                            <!-- ROW-19 -->
+                            <tr class="RowTable">
+                                <td>29</td>
+                                <td>muhenkn</td>
+                                <td></td>
+                                <td></td>
+                                <td>non-conversion</td>
+                            </tr>
+                            <!-- ROW-20 -->
+                            <tr class="RowTable">
+                                <td>32</td>
+                                <td>(blank space)</td>
+                                <td>Space</td>
+                                <td></td>
+                                <td>spacebar</td>
+                            </tr>
+
+                            <!-- ROW-21 -->
+                            <tr class="RowTable">
+                                <td>33</td>
+                                <td>PageUp</td>
+                                <td>Numpad9</td>
+                                <td>⇞</td>
+                                <td>page up</td>
+                            </tr>
+                            <!-- ROW-22 -->
+                            <tr class="RowTable">
+                                <td>34</td>
+                                <td>PageDown</td>
+                                <td>Numpad3</td>
+                                <td>⇟</td>
+                                <td>page down</td>
+                            </tr>
+
+
+                            <!-- ROW-23 -->
+                            <tr class="RowTable">
+                                <td>35</td>
+                                <td>End</td>
+                                <td>Numpad1</td>
+                                <td>⇟</td>
+                                <td>end</td>
+                            </tr>
+
+                            <!-- ROW-24 -->
+                            <tr class="RowTable">
+                                <td>36</td>
+                                <td>Home</td>
+                                <td>Numpad7</td>
+                                <td>⌂</td>
+                                <td>home</td>
+                            </tr>
+                            <!-- ROW-25 -->
+                            <tr class="RowTable">
+                                <td>37</td>
+                                <td>ArrowLeft</td>
+                                <td>ArrowLeft</td>
+                                <td>←</td>
+                                <td>left arrow</td>
+                            </tr>
+                            <!-- ROW-26 -->
+                            <tr class="RowTable">
+                                <td>38</td>
+                                <td>ArrowUp</td>
+                                <td>ArrowUp</td>
+                                <td>↑</td>
+                                <td>up arrow</td>
+                            </tr>
+                            <!-- ROW-27 -->
+                            <tr class="RowTable">
+                                <td>39</td>
+                                <td>ArrowRight</td>
+                                <td>ArrowRight</td>
+                                <td>→</td>
+                                <td>right arrow</td>
+                            </tr>
+                            <!-- ROW-28 -->
+                            <tr class="RowTable">
+                                <td>40</td>
+                                <td>ArrowDown</td>
+                                <td>ArrowDown</td>
+                                <td>↓</td>
+                                <td>down arrow</td>
+                            </tr>
+                            <!-- ROW-29 -->
+                            <tr class="RowTable">
+                                <td>41</td>
+                                <td>Select</td>
+                                <td></td>
+                                <td></td>
+                                <td>select</td>
+                            </tr> <!-- ROW-30 -->
+                            <tr class="RowTable">
+                                <td>42</td>
+                                <td>Print</td>
+                                <td></td>
+                                <td></td>
+                                <td>print</td>
+                            </tr>
+                            <!-- ROW-31 -->
+                            <tr class="RowTable">
+                                <td>43</td>
+                                <td>Execute</td>
+                                <td></td>
+                                <td></td>
+                                <td>execute</td>
+                            </tr>
+                            <!-- ROW-32 -->
+                            <tr class="RowTable">
+                                <td>44</td>
+                                <td>F13</td>
+                                <td>F13</td>
+                                <td>⎙</td>
+                                <td>Print Screen / F13 (firefox)</td>
+                            </tr>
+                            <!-- ROW-33 -->
+                            <tr class="RowTable">
+                                <td>45</td>
+                                <td>Insert</td>
+                                <td>Numpad0</td>
+                                <td>x</td>
+                                <td>insert</td>
+                            </tr>
+                            <!-- ROW-34 -->
+                            <tr class="RowTable">
+                                <td>46</td>
+                                <td>Delete</td>
+                                <td>NumpadDecimal</td>
+                                <td>⌦</td>
+                                <td>delete</td>
+                            </tr>
+                            <!-- ROW-35 -->
+                            <tr class="RowTable">
+                                <td>47</td>
+                                <td>Help</td>
+                                <td></td>
+                                <td>⍰</td>
+                                <td>help</td>
+                            </tr>
+                            <!-- ROW-36 -->
+                            <tr class="RowTable">
+                                <td>48</td>
+                                <td>0</td>
+                                <td>Digit0</td>
+                                <td>⓪</td>
+                                <td>0</td>
+                            </tr>
+                            <!-- ROW-37 -->
+                            <tr class="RowTable">
+                                <td>48</td>
+                                <td>’</td>
+                                <td>Digit0</td>
+                                <td>’</td>
+                                <td>apostrophe</td>
+                            </tr>
+                            <!-- ROW-38 -->
+                            <tr class="RowTable">
+                                <td>48</td>
+                                <td>º</td>
+                                <td>Digit0</td>
+                                <td>º</td>
+                                <td>ordinal indicator</td>
+                            </tr>
+                            <!-- ROW-39 -->
+                            <tr class="RowTable">
+                                <td>49</td>
+                                <td>1</td>
+                                <td>Digit1</td>
+                                <td>①</td>
+                                <td>1 Key</td>
+                            </tr>
+
+                            <!-- ROW-40 -->
+                            <tr class="RowTable">
+                                <td>49</td>
+                                <td>!</td>
+                                <td>Digit1</td>
+                                <td>!</td>
+                                <td>excalmation mark</td>
+                            </tr>
+                            <!-- ROW-41 -->
+                            <tr class="RowTable">
+                                <td>49</td>
+                                <td>¡</td>
+                                <td>Digit1</td>
+                                <td>¡</td>
+                                <td>inverted exclamation mark</td>
+                            </tr>
+                            <!-- ROW-42 -->
+                            <tr class="RowTable">
+                                <td>50</td>
+                                <td>2</td>
+                                <td>Digit2</td>
+                                <td>②</td>
+                                <td>2 key</td>
+                            </tr>
+                            <!-- ROW-43 -->
+                            <tr class="RowTable">
+                                <td>50</td>
+                                <td>@</td>
+                                <td>Digit2</td>
+                                <td>@</td>
+                                <td>at sign</td>
+                            </tr>
+                            <!-- ROW-44 -->
+                            <tr class="RowTable">
+                                <td>50</td>
+                                <td>²</td>
+                                <td>Digit2</td>
+                                <td>²</td>
+                                <td>square</td>
+                            </tr>
+                            <!-- ROW-45 -->
+                            <tr class="RowTable">
+                                <td>50</td>
+                                <td>™</td>
+                                <td>Digit2</td>
+                                <td>™</td>
+                                <td>trademark</td>
+                            </tr>
+                            <!-- ROW-46 -->
+                            <tr class="RowTable">
+                                <td>51</td>
+                                <td>3</td>
+                                <td>Digit3</td>
+                                <td>③</td>
+                                <td>3 key</td>
+                            </tr>
+                            <!-- ROW-47 -->
+                            <tr class="RowTable">
+                                <td>51</td>
+                                <td>#</td>
+                                <td>Digit3</td>
+                                <td>#</td>
+                                <td>hash</td>
+                            </tr>
+                            <!-- ROW-48 -->
+                            <tr class="RowTable">
+                                <td>51</td>
+                                <td>³</td>
+                                <td>Digit3</td>
+                                <td>³</td>
+                                <td>cube</td>
+                            </tr>
+                            <!-- ROW-49 -->
+                            <tr class="RowTable">
+                                <td>51</td>
+                                <td>£</td>
+                                <td>Digit3</td>
+                                <td>£</td>
+                                <td>pound</td>
+                            </tr>
+                            <!-- ROW-50 -->
+                            <tr class="RowTable">
+                                <td>52</td>
+                                <td>4</td>
+                                <td>Digit4</td>
+                                <td>④</td>
+                                <td>4 key</td>
+                            </tr>
+                            <!-- ROW-51 -->
+                            <tr class="RowTable">
+                                <td>52</td>
+                                <td>¤</td>
+                                <td>Digit4</td>
+                                <td>¤</td>
+                                <td>currency</td>
+                            </tr>
+                            <!-- ROW-52 -->
+                            <tr class="RowTable">
+                                <td>52</td>
+                                <td>¢</td>
+                                <td>Digit4</td>
+                                <td>¢</td>
+                                <td>cent</td>
+                            </tr>
+                            <!-- ROW-53 -->
+                            <tr class="RowTable">
+                                <td>53</td>
+                                <td>5</td>
+                                <td>Digit5</td>
+                                <td>⑤</td>
+                                <td>5 key</td>
+                            </tr>
+
+                            <!-- ROW-54 -->
+                            <tr class="RowTable">
+                                <td>53</td>
+                                <td>%</td>
+                                <td>Digit5</td>
+                                <td>%</td>
+                                <td>percent</td>
+                            </tr>
+
+                            <!-- ROW-55-->
+                            <tr class="RowTable">
+                                <td>53</td>
+                                <td>€</td>
+                                <td>Digit5</td>
+                                <td>€</td>
+                                <td>euro</td>
+                            </tr>
+
+                            <!-- ROW-56 -->
+                            <tr class="RowTable">
+                                <td>53</td>
+                                <td>∞</td>
+                                <td>Digit5</td>
+                                <td>∞</td>
+                                <td>infinity</td>
+                            </tr>
+
+                            <!-- ROW-57 -->
+                            <tr class="RowTable">
+                                <td>54</td>
+                                <td>6</td>
+                                <td>Digit6</td>
+                                <td>⑥</td>
+                                <td>6 key</td>
+                            </tr>
+
+                            <!-- ROW-58 -->
+                            <tr class="RowTable">
+                                <td>54</td>
+                                <td>§</td>
+                                <td>Digit6</td>
+                                <td>§</td>
+                                <td>section sign</td>
+                            </tr>
+
+                            <!-- ROW-59 -->
+                            <tr class="RowTable">
+                                <td>54</td>
+                                <td>¼</td>
+                                <td>Digit6</td>
+                                <td>¼</td>
+                                <td>one quarter</td>
+                            </tr>
+
+                            <!-- ROW-60 -->
+                            <tr class="RowTable">
+                                <td>55</td>
+                                <td>7</td>
+                                <td>Digit7</td>
+                                <td>⑦</td>
+                                <td>7 key</td>
+                            </tr>
+
+                            <!-- ROW-61 -->
+                            <tr class="RowTable">
+                                <td>55</td>
+                                <td>&</td>
+                                <td>Digit7</td>
+                                <td>&</td>
+                                <td>and</td>
+                            </tr>
+
+                            <!-- ROW-62 -->
+                            <tr class="RowTable">
+                                <td>55</td>
+                                <td>½</td>
+                                <td>Digit7</td>
+                                <td>½</td>
+                                <td>half</td>
+                            </tr>
+
+                            <!-- ROW-63 -->
+                            <tr class="RowTable">
+                                <td>56</td>
+                                <td>8</td>
+                                <td>Digit8</td>
+                                <td>⑧</td>
+                                <td>8 key</td>
+                            </tr>
+
+                            <!-- ROW-64 -->
+                            <tr class="RowTable">
+                                <td>56</td>
+                                <td>¾</td>
+                                <td>Digit8</td>
+                                <td>¾</td>
+                                <td>three quarter</td>
+                            </tr>
+
+                            <!-- ROW-65 -->
+                            <tr class="RowTable">
+                                <td>56</td>
+                                <td>•</td>
+                                <td>Digit8</td>
+                                <td>•</td>
+                                <td>bullet</td>
+                            </tr>
+
+                            <!-- ROW-66 -->
+                            <tr class="RowTable">
+                                <td>57</td>
+                                <td>9</td>
+                                <td>Digit9</td>
+                                <td>⑨</td>
+                                <td>9 key</td>
+                            </tr>
+
+                            <!-- ROW-67 -->
+                            <tr class="RowTable">
+                                <td>57</td>
+                                <td>(</td>
+                                <td>Digit9</td>
+                                <td>(</td>
+                                <td>parenttheses left</td>
+                            </tr>
+
+                            <!-- ROW-68 -->
+                            <tr class="RowTable">
+                                <td>57</td>
+                                <td>‘</td>
+                                <td>Digit9</td>
+                                <td>‘</td>
+                                <td>inverted apostrophe</td>
+                            </tr>
+
+                            <!-- ROW-69 -->
+                            <tr class="RowTable">
+                                <td>57</td>
+                                <td>ª</td>
+                                <td>Digit9</td>
+                                <td>ª</td>
+                                <td>feminine ordinal indicator</td>
+                            </tr>
+
+                            <!-- ROW-70 -->
+                            <tr class="RowTable">
+                                <td>58</td>
+                                <td>:</td>
+                                <td>Period</td>
+                                <td></td>
+                                <td>:</td>
+                            </tr>
+                            <!-- ROW-71 -->
+                            <tr class="RowTable">
+                                <td>59</td>
+                                <td>;</td>
+                                <td>Semicolon</td>
+                                <td></td>
+                                <td>Semicolon (firefox),equals</td>
+                            </tr>
+                            <!-- ROW-72 -->
+                            <tr class="RowTable">
+                                <td>60</td>
+                                <td>
+                                    < </td>
+                                <td>Backquote</td>
+                                <td></td>
+                                <td>
+                                    < </td>
+                            </tr>
+                            <!-- ROW-73 -->
+                            <tr class="RowTable">
+                                <td>61</td>
+                                <td>=</td>
+                                <td>Equal</td>
+                                <td></td>
+                                <td>equals (firefox)</td>
+                            </tr>
+                            <!-- ROW-74 -->
+                            <tr class="RowTable">
+                                <td>63</td>
+                                <td>ß</td>
+                                <td>Minus</td>
+                                <td></td>
+                                <td>ß / ?</td>
+                            </tr>
+                            <!-- ROW-75 -->
+                            <tr class="RowTable">
+                                <td>64</td>
+                                <td>@</td>
+                                <td></td>
+                                <td></td>
+                                <td>@ (firefox)</td>
+                            </tr>
+                            <!-- ROW-76 -->
+                            <tr class="RowTable">
+                                <td>65</td>
+                                <td>a</td>
+                                <td>KeyA</td>
+                                <td></td>
+                                <td>a</td>
+                            </tr>
+                            <!-- ROW-77 -->
+                            <tr class="RowTable">
+                                <td>65</td>
+                                <td>á</td>
+                                <td>KeyA</td>
+                                <td>á</td>
+                                <td>a acute</td>
+                            </tr>
+                            <!-- ROW-78 -->
+                            <tr class="RowTable">
+                                <td>66</td>
+                                <td>b</td>
+                                <td>KeyB</td>
+                                <td></td>
+                                <td>b</td>
+                            </tr>
+                            <!-- ROW-79 -->
+                            <tr class="RowTable">
+                                <td>66</td>
+                                <td>∫</td>
+                                <td>KeyB</td>
+                                <td>∫</td>
+                                <td>integral</td>
+                            </tr>
+                            <!-- ROW-80 -->
+                            <tr class="RowTable">
+                                <td>67</td>
+                                <td>c</td>
+                                <td>KeyC</td>
+                                <td></td>
+                                <td>c</td>
+                            </tr>
+                            <!-- ROW-81 -->
+                            <tr class="RowTable">
+                                <td>67</td>
+                                <td>©</td>
+                                <td>KeyC</td>
+                                <td>©</td>
+                                <td>copywright</td>
+                            </tr>
+                            <!-- ROW-82 -->
+                            <tr class="RowTable">
+                                <td>68</td>
+                                <td>d</td>
+                                <td>KeyD</td>
+                                <td></td>
+                                <td>d</td>
+                            </tr>
+                            <!-- ROW-83 -->
+                            <tr class="RowTable">
+                                <td>68</td>
+                                <td>ð</td>
+                                <td>KeyD</td>
+                                <td>ð</td>
+                                <td>voiced dental fricative</td>
+                            </tr>
+                            <!-- ROW-84 -->
+                            <tr class="RowTable">
+                                <td>68</td>
+                                <td>∂</td>
+                                <td>KeyD</td>
+                                <td>∂</td>
+                                <td>partial</td>
+                            </tr>
+                            <!-- ROW-85 -->
+                            <tr class="RowTable">
+                                <td>69</td>
+                                <td>e</td>
+                                <td>KeyE</td>
+                                <td></td>
+                                <td>e</td>
+                            </tr>
+                            <!-- ROW-86 -->
+                            <tr class="RowTable">
+                                <td>69</td>
+                                <td>Dead</td>
+                                <td>KeyE</td>
+                                <td></td>
+                                <td>e</td>
+                            </tr>
+                            <!-- ROW-87 -->
+                            <tr class="RowTable">
+                                <td>69</td>
+                                <td>é</td>
+                                <td>KeyE</td>
+                                <td>é</td>
+                                <td>e acute</td>
+                            </tr>
+                            <!-- ROW-88 -->
+                            <tr class="RowTable">
+                                <td>70</td>
+                                <td>f</td>
+                                <td>KeyF</td>
+                                <td></td>
+                                <td>f</td>
+                            </tr>
+                            <!-- ROW-89 -->
+                            <tr class="RowTable">
+                                <td>70</td>
+                                <td>ƒ</td>
+                                <td>KeyF</td>
+                                <td>ƒ</td>
+                                <td>f with hook</td>
+                            </tr>
+                            <!-- ROW-90 -->
+                            <tr class="RowTable">
+                                <td>71</td>
+                                <td>g</td>
+                                <td>KeyG</td>
+                                <td></td>
+                                <td>g</td>
+                            </tr>
+                            <!-- ROW-91 -->
+                            <tr class="RowTable">
+                                <td>72</td>
+                                <td>h</td>
+                                <td>KeyH</td>
+                                <td></td>
+                                <td>h</td>
+                            </tr>
+
+                            <!-- ROW-92 -->
+                            <tr class="RowTable">
+                                <td>72</td>
+                                <td>˙</td>
+                                <td>KeyH</td>
+                                <td>˙</td>
+                                <td>overdot</td>
+                            </tr>
+                            <!-- ROW-93 -->
+                            <tr class="RowTable">
+                                <td>72</td>
+                                <td>˚</td>
+                                <td>KeyH</td>
+                                <td>˚</td>
+                                <td>small degree</td>
+                            </tr>
+                            <!-- ROW-94 -->
+                            <tr class="RowTable">
+                                <td>73</td>
+                                <td>i</td>
+                                <td>KeyI</td>
+                                <td></td>
+                                <td>i</td>
+                            </tr>
+                            <!-- ROW-95 -->
+                            <tr class="RowTable">
+                                <td>73</td>
+                                <td>Dead</td>
+                                <td>KeyI</td>
+                                <td></td>
+                                <td>i</td>
+                            </tr>
+                            <!-- ROW-96-->
+                            <tr class="RowTable">
+                                <td>73</td>
+                                <td>^</td>
+                                <td>KeyI</td>
+                                <td>^</td>
+                                <td>caret</td>
+                            </tr>
+                            <!-- ROW-97 -->
+                            <tr class="RowTable">
+                                <td>73</td>
+                                <td>í</td>
+                                <td>KeyI</td>
+                                <td>í</td>
+                                <td>i acute</td>
+                            </tr>
+                            <!-- ROW-98 -->
+                            <tr class="RowTable">
+                                <td>74</td>
+                                <td>j</td>
+                                <td>KeyJ</td>
+                                <td></td>
+                                <td>j</td>
+                            </tr>
+                            <!-- ROW-99 -->
+                            <tr class="RowTable">
+                                <td>74</td>
+                                <td>∆</td>
+                                <td>KeyJ</td>
+                                <td>∆</td>
+                                <td>delta</td>
+                            </tr>
+                            <!-- ROW-100 -->
+                            <tr class="RowTable">
+                                <td>75</td>
+                                <td>k</td>
+                                <td>KeyK</td>
+                                <td></td>
+                                <td>k</td>
+                            </tr>
+                            <!-- ROW-101 -->
+                            <tr class="RowTable">
+                                <td>75</td>
+                                <td>°</td>
+                                <td>KeyK</td>
+                                <td>°</td>
+                                <td>degree</td>
+                            </tr>
+                            <!-- ROW-102 -->
+                            <tr class="RowTable">
+                                <td>76</td>
+                                <td>l</td>
+                                <td>KeyL</td>
+                                <td></td>
+                                <td>l</td>
+                            </tr>
+                            <!-- ROW-103 -->
+                            <tr class="RowTable">
+                                <td>76</td>
+                                <td>ø</td>
+                                <td>KeyL</td>
+                                <td>ø</td>
+                                <td>close mid front rounded vowel</td>
+                            </tr>
+
+                            <!-- ROW-104 -->
+                            <tr class="RowTable">
+                                <td>77</td>
+                                <td>m</td>
+                                <td>KeyM</td>
+                                <td></td>
+                                <td>m</td>
+                            </tr>
+                            <!-- ROW-105 -->
+                            <tr class="RowTable">
+                                <td>77</td>
+                                <td>µ</td>
+                                <td>KeyM</td>
+                                <td>µ</td>
+                                <td>one millionth</td>
+                            </tr>
+                            <!-- ROW-104 -->
+                            <tr class="RowTable">
+                                <td>78</td>
+                                <td>n</td>
+                                <td>KeyN</td>
+                                <td></td>
+                                <td>n</td>
+                            </tr>
+                            <!-- ROW-105 -->
+                            <tr class="RowTable">
+                                <td>78</td>
+                                <td>Dead</td>
+                                <td>KeyN</td>
+                                <td></td>
+                                <td>n</td>
+                            </tr>
+                            <!-- ROW-106 -->
+                            <tr class="RowTable">
+                                <td>78</td>
+                                <td>ñ</td>
+                                <td>KeyN</td>
+                                <td>ñ</td>
+                                <td>n with tilde</td>
+                            </tr>
+                            <!-- ROW-107 -->
+                            <tr class="RowTable">
+                                <td>78</td>
+                                <td>~</td>
+                                <td>KeyN</td>
+                                <td>~</td>
+                                <td>tilde</td>
+                            </tr>
+                            <!-- ROW-108 -->
+                            <tr class="RowTable">
+                                <td>79</td>
+                                <td>o</td>
+                                <td>KeyO</td>
+                                <td></td>
+                                <td>o</td>
+                            </tr>
+                            <!-- ROW-109 -->
+                            <tr class="RowTable">
+                                <td>79</td>
+                                <td>ó</td>
+                                <td>KeyO</td>
+                                <td>ó</td>
+                                <td>o acute</td>
+                            </tr>
+                            <!-- ROW-110 -->
+                            <tr class="RowTable">
+                                <td>80</td>
+                                <td>p</td>
+                                <td>KeyP</td>
+                                <td></td>
+                                <td>p</td>
+                            </tr>
+                            <!-- ROW-111-->
+                            <tr class="RowTable">
+                                <td>80</td>
+                                <td>ö</td>
+                                <td>KeyP</td>
+                                <td>ö</td>
+                                <td>o with umlaut</td>
+                            </tr>
+                            <!-- ROW-112 -->
+                            <tr class="RowTable">
+                                <td>80</td>
+                                <td>π</td>
+                                <td>KeyP</td>
+                                <td>π</td>
+                                <td>pi</td>
+                            </tr>
+                            <!-- ROW-110 -->
+                            <tr class="RowTable">
+                                <td>81</td>
+                                <td>q</td>
+                                <td>KeyQ</td>
+                                <td></td>
+                                <td>q</td>
+                            </tr>
+                            <!-- ROW-111-->
+                            <tr class="RowTable">
+                                <td>81</td>
+                                <td>ä</td>
+                                <td>KeyQ</td>
+                                <td>ä</td>
+                                <td>open central unrounded vowel</td>
+                            </tr>
+                            <!-- ROW-112 -->
+                            <tr class="RowTable">
+                                <td>81</td>
+                                <td>œ</td>
+                                <td>KeyQ</td>
+                                <td>œ</td>
+                                <td>open mid front rounded vowel</td>
+                            </tr>
+                            <!-- ROW-113 -->
+                            <tr class="RowTable">
+                                <td>82</td>
+                                <td>r</td>
+                                <td>KeyR</td>
+                                <td></td>
+                                <td>r</td>
+                            </tr>
+                            <!-- ROW-114 -->
+                            <tr class="RowTable">
+                                <td>82</td>
+                                <td>®</td>
+                                <td>KeyR</td>
+                                <td>®</td>
+                                <td>registered trademark</td>
+                            </tr>
+                            <!-- ROW-115 -->
+                            <tr class="RowTable">
+                                <td>83</td>
+                                <td>s</td>
+                                <td>KeyS</td>
+                                <td></td>
+                                <td>s</td>
+                            </tr>
+                            <!-- ROW-116 -->
+                            <tr class="RowTable">
+                                <td>83</td>
+                                <td>ß</td>
+                                <td>KeyS</td>
+                                <td>ß</td>
+                                <td>sharp s</td>
+                            </tr>
+                            <!-- ROW-117 -->
+                            <tr class="RowTable">
+                                <td>84</td>
+                                <td>t</td>
+                                <td>KeyT</td>
+                                <td></td>
+                                <td>t</td>
+                            </tr>
+
+                            <!-- ROW-117 -->
+                            <tr class="RowTable">
+                                <td>84</td>
+                                <td>þ</td>
+                                <td>KeyT</td>
+                                <td>þ</td>
+                                <td>thorn</td>
+                            </tr>
+
+                            <!-- ROW-118 -->
+                            <tr class="RowTable">
+                                <td>84</td>
+                                <td>†</td>
+                                <td>KeyT</td>
+                                <td>†</td>
+                                <td>obelus</td>
+                            </tr>
+
+                            <!-- ROW-119 -->
+                            <tr class="RowTable">
+                                <td>85</td>
+                                <td>u</td>
+                                <td>KeyU</td>
+                                <td></td>
+                                <td>u</td>
+                            </tr>
+
+                            <!-- ROW-120 -->
+                            <tr class="RowTable">
+                                <td>85</td>
+                                <td>Dead</td>
+                                <td>KeyU</td>
+                                <td></td>
+                                <td>u</td>
+                            </tr>
+
+                            <!-- ROW-121 -->
+                            <tr class="RowTable">
+                                <td>85</td>
+                                <td>ú</td>
+                                <td>KeyU</td>
+                                <td>ú</td>
+                                <td>u acute</td>
+                            </tr>
+
+                            <!-- ROW-122 -->
+                            <tr class="RowTable">
+                                <td>85</td>
+                                <td>¨</td>
+                                <td>KeyU</td>
+                                <td>¨</td>
+                                <td>umlaut</td>
+                            </tr>
+                            <!-- ROW-123 -->
+                            <tr class="RowTable">
+                                <td>86</td>
+                                <td>v</td>
+                                <td>KeyV</td>
+                                <td></td>
+                                <td>v</td>
+                            </tr>
+                            <!-- ROW-124 -->
+                            <tr class="RowTable">
+                                <td>86</td>
+                                <td>√</td>
+                                <td>KeyV</td>
+                                <td>√</td>
+                                <td>square root</td>
+                            </tr>
+                            <!-- ROW-125 -->
+                            <tr class="RowTable">
+                                <td>87</td>
+                                <td>w</td>
+                                <td>KeyW</td>
+                                <td></td>
+                                <td>w</td>
+                            </tr>
+                            <!-- ROW-126 -->
+                            <tr class="RowTable">
+                                <td>87</td>
+                                <td>å</td>
+                                <td>KeyW</td>
+                                <td>å</td>
+                                <td>open mid back unrounded vowel</td>
+                            </tr>
+                            <!-- ROW-127 -->
+                            <tr class="RowTable">
+                                <td>87</td>
+                                <td>Σ</td>
+                                <td>KeyW</td>
+                                <td>Σ</td>
+                                <td>sigma</td>
+                            </tr>
+                            <!-- ROW-128 -->
+                            <tr class="RowTable">
+                                <td>87</td>
+                                <td>∑</td>
+                                <td>KeyW</td>
+                                <td>∑</td>
+                                <td>summation sigma</td>
+                            </tr>
+                            <!-- ROW-129 -->
+                            <tr class="RowTable">
+                                <td>88</td>
+                                <td>x</td>
+                                <td>KeyX</td>
+                                <td></td>
+                                <td>x</td>
+                            </tr>
+                            <!-- ROW-130 -->
+                            <tr class="RowTable">
+                                <td>88</td>
+                                <td>≈</td>
+                                <td>KeyX</td>
+                                <td>≈</td>
+                                <td>approximate</td>
+                            </tr>
+                            <!-- ROW-131 -->
+                            <tr class="RowTable">
+                                <td>89</td>
+                                <td>y</td>
+                                <td>KeyY</td>
+                                <td></td>
+                                <td>y</td>
+                            </tr>
+                            <!-- ROW-132 -->
+                            <tr class="RowTable">
+                                <td>89</td>
+                                <td>¥</td>
+                                <td>KeyY</td>
+                                <td>¥</td>
+                                <td>yen</td>
+                            </tr>
+
+                            <!-- ROW-133 -->
+                            <tr class="RowTable">
+                                <td>89</td>
+                                <td>ü</td>
+                                <td>KeyY</td>
+                                <td>ü</td>
+                                <td>u with umlaut</td>
+                            </tr>
+
+                            <!-- ROW-134 -->
+                            <tr class="RowTable">
+                                <td>90</td>
+                                <td>z</td>
+                                <td>KeyZ</td>
+                                <td></td>
+                                <td>z</td>
+                            </tr>
+
+                            <!-- ROW-135 -->
+                            <tr class="RowTable">
+                                <td>90</td>
+                                <td>æ</td>
+                                <td>KeyZ</td>
+                                <td>æ</td>
+                                <td>near open front unrounded novel</td>
+                            </tr>
+                            <!-- ROW-136 -->
+                            <tr class="RowTable">
+                                <td>90</td>
+                                <td>Ω</td>
+                                <td>KeyZ</td>
+                                <td>Ω</td>
+                                <td>ohm</td>
+                            </tr>
+                            <!-- ROW-137 -->
+                            <tr class="RowTable">
+                                <td>91</td>
+                                <td>Meta</td>
+                                <td>MetaLeft</td>
+                                <td>⌘ ⊞</td>
+                                <td>Windows Key / Left ⌘ / Chromebook Search key</td>
+                            </tr>
+
+                            <!-- ROW-138 -->
+                            <tr class="RowTable">
+                                <td>92</td>
+                                <td>Meta</td>
+                                <td>MetaRight</td>
+                                <td>⌘ ⊞</td>
+                                <td>Right Windows</td>
+                            </tr>
+
+                            <!-- ROW-139 -->
+                            <tr class="RowTable">
+                                <td>93</td>
+                                <td>ContextMenu</td>
+                                <td>ContextMenu</td>
+                                <td>▤</td>
+                                <td>Windows Menu / Right ⌘</td>
+                            </tr>
+
+                            <!-- ROW-140 -->
+                            <tr class="RowTable">
+                                <td>95</td>
+                                <td>Standby</td>
+                                <td></td>
+                                <td>☾</td>
+                                <td>sleep</td>
+                            </tr>
+
+                            <!-- ROW-141 -->
+                            <tr class="RowTable">
+                                <td>96</td>
+                                <td>0</td>
+                                <td>Numpad0</td>
+                                <td>⓪</td>
+                                <td>Numbad Pad 0</td>
+                            </tr>
+
+                            <!-- ROW-142 -->
+                            <tr class="RowTable">
+                                <td>97</td>
+                                <td>1</td>
+                                <td>Numpad1</td>
+                                <td>①</td>
+                                <td>Numbad Pad 1</td>
+                            </tr>
+
+                            <!-- ROW-143 -->
+                            <tr class="RowTable">
+                                <td>98</td>
+                                <td>2</td>
+                                <td>Numpad2</td>
+                                <td>②</td>
+                                <td>Numbad Pad 2</td>
+                            </tr>
+
+                            <!-- ROW-144 -->
+                            <tr class="RowTable">
+                                <td>99</td>
+                                <td>3</td>
+                                <td>Numpad3</td>
+                                <td>③</td>
+                                <td>Numbad Pad 3</td>
+                            </tr>
+
+                            <!-- ROW-145 -->
+                            <tr class="RowTable">
+                                <td>100</td>
+                                <td>4</td>
+                                <td>Numpad4</td>
+                                <td>④</td>
+                                <td>Numbad Pad 4</td>
+                            </tr>
+
+                            <!-- ROW-146 -->
+                            <tr class="RowTable">
+                                <td>101</td>
+                                <td>5</td>
+                                <td>Numpad5</td>
+                                <td>⑤</td>
+                                <td>Numbad Pad 5</td>
+                            </tr>
+
+                            <!-- ROW-147 -->
+                            <tr class="RowTable">
+                                <td>102</td>
+                                <td>6</td>
+                                <td>Numpad6</td>
+                                <td>⑥</td>
+                                <td>Numbad Pad 6</td>
+                            </tr>
+
+                            <!-- ROW-148 -->
+                            <tr class="RowTable">
+                                <td>103</td>
+                                <td>7</td>
+                                <td>Numpad7</td>
+                                <td>⑦</td>
+                                <td>Numbad Pad 7</td>
+                            </tr>
+
+                            <!-- ROW-149 -->
+                            <tr class="RowTable">
+                                <td>104</td>
+                                <td>8</td>
+                                <td>Numpad8</td>
+                                <td>⑧</td>
+                                <td>Numbad Pad 8</td>
+                            </tr>
+
+                            <!-- ROW-150 -->
+                            <tr class="RowTable">
+                                <td>105</td>
+                                <td>9</td>
+                                <td>Numpad9</td>
+                                <td>⑨</td>
+                                <td>Numbad Pad 9</td>
+                            </tr>
+
+                            <!-- ROW-151 -->
+                            <tr class="RowTable">
+                                <td>106</td>
+                                <td>*</td>
+                                <td>NumpadMultiply</td>
+                                <td>x</td>
+                                <td>multiply</td>
+                            </tr>
+
+                            <!-- ROW-152 -->
+                            <tr class="RowTable">
+                                <td>107</td>
+                                <td>+</td>
+                                <td>Numpad Add</td>
+                                <td></td>
+                                <td>add</td>
+                            </tr>
+
+                            <!-- ROW-153 -->
+                            <tr class="RowTable">
+                                <td>108</td>
+                                <td>,</td>
+                                <td>NumpadDecimal</td>
+                                <td></td>
+                                <td>numpad period (firefox)</td>
+                            </tr>
+
+                            <!-- ROW-154 -->
+                            <tr class="RowTable">
+                                <td>109</td>
+                                <td>-</td>
+                                <td>NumpadSubtract</td>
+                                <td></td>
+                                <td>subtract</td>
+                            </tr>
+
+                            <!-- ROW-155 -->
+                            <tr class="RowTable">
+                                <td>110</td>
+                                <td>.</td>
+                                <td>NumpadDecimal</td>
+                                <td></td>
+                                <td>decimal point</td>
+                            </tr>
+
+                            <!-- ROW-156 -->
+                            <tr class="RowTable">
+                                <td>111</td>
+                                <td>/</td>
+                                <td>NumpadDivide</td>
+                                <td></td>
+                                <td>divide</td>
+                            </tr>
+
+                            <!-- ROW-157 -->
+                            <tr class="RowTable">
+                                <td>112</td>
+                                <td>F1</td>
+                                <td>F1</td>
+                                <td></td>
+                                <td>f1</td>
+                            </tr>
+
+                            <!-- ROW-158 -->
+                            <tr class="RowTable">
+                                <td>113</td>
+                                <td>F2</td>
+                                <td>F2</td>
+                                <td></td>
+                                <td>f2</td>
+                            </tr>
+
+                            <!-- ROW-136 -->
+                            <tr class="RowTable">
+                                <td>114</td>
+                                <td>F3</td>
+                                <td>F3</td>
+                                <td></td>
+                                <td>f3</td>
+                            </tr>
+
+                            <!-- ROW-159 -->
+                            <tr class="RowTable">
+                                <td>115</td>
+                                <td>F4</td>
+                                <td>F4</td>
+                                <td></td>
+                                <td>f4</td>
+                            </tr>
+
+                            <!-- ROW-160 -->
+                            <tr class="RowTable">
+                                <td>116</td>
+                                <td>F5</td>
+                                <td>F5</td>
+                                <td></td>
+                                <td>f5</td>
+                            </tr>
+
+                            <!-- ROW-161 -->
+                            <tr class="RowTable">
+                                <td>117</td>
+                                <td>F6</td>
+                                <td>F6</td>
+                                <td></td>
+                                <td>f6</td>
+                            </tr>
+
+                            <!-- ROW-162 -->
+                            <tr class="RowTable">
+                                <td>118</td>
+                                <td>F7</td>
+                                <td>F7</td>
+                                <td></td>
+                                <td>f7</td>
+                            </tr>
+
+                            <!-- ROW-163-->
+                            <tr class="RowTable">
+                                <td>119</td>
+                                <td>F8</td>
+                                <td>F8</td>
+                                <td></td>
+                                <td>f8</td>
+                            </tr>
+
+                            <!-- ROW-164 -->
+                            <tr class="RowTable">
+                                <td>120</td>
+                                <td>F9</td>
+                                <td>F9</td>
+                                <td></td>
+                                <td>f9</td>
+                            </tr>
+
+                            <!-- ROW-165 -->
+                            <tr class="RowTable">
+                                <td>121</td>
+                                <td>F10</td>
+                                <td>F10</td>
+                                <td></td>
+                                <td>f10</td>
+                            </tr>
+
+
+                            <!-- ROW-166 -->
+                            <tr class="RowTable">
+                                <td>122</td>
+                                <td>F11</td>
+                                <td>F11</td>
+                                <td></td>
+                                <td>f11</td>
+                            </tr>
+
+                            <!-- ROW-167 -->
+                            <tr class="RowTable">
+                                <td>123</td>
+                                <td>F12</td>
+                                <td>F12</td>
+                                <td></td>
+                                <td>f12</td>
+                            </tr>
+
+                            <!-- ROW-168 -->
+                            <tr class="RowTable">
+                                <td>124</td>
+                                <td>F13</td>
+                                <td>F13</td>
+                                <td></td>
+                                <td>f13</td>
+                            </tr>
+
+                            <!-- ROW-169 -->
+                            <tr class="RowTable">
+                                <td>125</td>
+                                <td>F14</td>
+                                <td>F14</td>
+                                <td></td>
+                                <td>f14</td>
+                            </tr>
+
+                            <!-- ROW-170 -->
+                            <tr class="RowTable">
+                                <td>126</td>
+                                <td>F15</td>
+                                <td>F15</td>
+                                <td></td>
+                                <td>f15</td>
+                            </tr>
+
+                            <!-- ROW-171 -->
+                            <tr class="RowTable">
+                                <td>127</td>
+                                <td>F16</td>
+                                <td>F16</td>
+                                <td></td>
+                                <td>f16</td>
+                            </tr>
+
+                            <!-- ROW-172 -->
+                            <tr class="RowTable">
+                                <td>128</td>
+                                <td>F17</td>
+                                <td>F17</td>
+                                <td></td>
+                                <td>f17</td>
+                            </tr>
+
+                            <!-- ROW-173 -->
+                            <tr class="RowTable">
+                                <td>129</td>
+                                <td>F18</td>
+                                <td>F18</td>
+                                <td></td>
+                                <td>f18</td>
+                            </tr>
+
+                            <!-- ROW-174 -->
+                            <tr class="RowTable">
+                                <td>130</td>
+                                <td>F19</td>
+                                <td>F19</td>
+                                <td></td>
+                                <td>f19</td>
+                            </tr>
+
+                            <!-- ROW-175 -->
+                            <tr class="RowTable">
+                                <td>131</td>
+                                <td>F20</td>
+                                <td>F20</td>
+                                <td></td>
+                                <td>F20</td>
+                            </tr>
+
+                            <!-- ROW-176 -->
+                            <tr class="RowTable">
+                                <td>132</td>
+                                <td>F21</td>
+                                <td>F21</td>
+                                <td></td>
+                                <td>F21</td>
+                            </tr>
+
+                            <!-- ROW-177 -->
+                            <tr class="RowTable">
+                                <td>133</td>
+                                <td>F22</td>
+                                <td>F22</td>
+                                <td></td>
+                                <td>F22</td>
+                            </tr>
+
+                            <!-- ROW-178 -->
+                            <tr class="RowTable">
+                                <td>134</td>
+                                <td>F23</td>
+                                <td>F23</td>
+                                <td></td>
+                                <td>F23</td>
+                            </tr>
+
+                            <!-- ROW-179 -->
+                            <tr class="RowTable">
+                                <td>135</td>
+                                <td>F24</td>
+                                <td>F24</td>
+                                <td></td>
+                                <td>F24</td>
+                            </tr>
+
+                            <!-- ROW-180 -->
+                            <tr class="RowTable">
+                                <td>136</td>
+                                <td>F25</td>
+                                <td>F25</td>
+                                <td></td>
+                                <td>F25</td>
+                            </tr>
+
+                            <!-- ROW-181 -->
+                            <tr class="RowTable">
+                                <td>137</td>
+                                <td>F26</td>
+                                <td>F26</td>
+                                <td></td>
+                                <td>F26</td>
+                            </tr>
+
+                            <!-- ROW-182 -->
+                            <tr class="RowTable">
+                                <td>138</td>
+                                <td>F27</td>
+                                <td>F27</td>
+                                <td></td>
+                                <td>F27</td>
+                            </tr>
+
+                            <!-- ROW-183 -->
+                            <tr class="RowTable">
+                                <td>139</td>
+                                <td>F28</td>
+                                <td>F28</td>
+                                <td></td>
+                                <td>F28</td>
+                            </tr>
+
+                            <!-- ROW-184 -->
+                            <tr class="RowTable">
+                                <td>140</td>
+                                <td>F29</td>
+                                <td>F29</td>
+                                <td></td>
+                                <td>F29</td>
+                            </tr>
+
+                            <!-- ROW-185 -->
+                            <tr class="RowTable">
+                                <td>141</td>
+                                <td>F30</td>
+                                <td>F30</td>
+                                <td></td>
+                                <td>F30</td>
+                            </tr>
+
+                            <!-- ROW-186 -->
+                            <tr class="RowTable">
+                                <td>142</td>
+                                <td>F31</td>
+                                <td>F31</td>
+                                <td></td>
+                                <td>F31</td>
+                            </tr>
+
+                            <!-- ROW-187 -->
+                            <tr class="RowTable">
+                                <td>143</td>
+                                <td>F32</td>
+                                <td>F32</td>
+                                <td></td>
+                                <td>F32</td>
+                            </tr>
+
+                            <!-- ROW-188 -->
+                            <tr class="RowTable">
+                                <td>144</td>
+                                <td>NumLock</td>
+                                <td>NumLock</td>
+                                <td>⇭</td>
+                                <td>num lock</td>
+                            </tr>
+
+                            <!-- ROW-189 -->
+                            <tr class="RowTable">
+                                <td>145</td>
+                                <td>ScrollLock</td>
+                                <td>ScrollLock</td>
+                                <td>⤓</td>
+                                <td>scroll lock</td>
+                            </tr>
+
+                            <!-- ROW-190 -->
+                            <tr class="RowTable">
+                                <td>151</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>airplane mode</td>
+                            </tr>
+                            <!-- ROW-191 -->
+                            <tr class="RowTable">
+                                <td>160</td>
+                                <td>^</td>
+                                <td>BracketLeft</td>
+                                <td></td>
+                                <td>^</td>
+                            </tr>
+
+                            <!-- ROW-192 -->
+                            <tr class="RowTable">
+                                <td>161</td>
+                                <td>Dead</td>
+                                <td>BracketRight</td>
+                                <td></td>
+                                <td>!</td>
+                            </tr>
+
+                            <!-- ROW-193 -->
+                            <tr class="RowTable">
+                                <td>162</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>؛ (arabic semicolon) / " / ¢</td>
+                            </tr>
+                            <!-- ROW-194 -->
+                            <tr class="RowTable">
+                                <td>163</td>
+                                <td>#</td>
+                                <td>Backquote</td>
+                                <td></td>
+                                <td>#</td>
+                            </tr>
+                            <!-- ROW-195 -->
+                            <tr class="RowTable">
+                                <td>164</td>
+                                <td>$</td>
+                                <td>Backslash</td>
+                                <td></td>
+                                <td>$</td>
+                            </tr>
+                            <!-- ROW-196 -->
+                            <tr class="RowTable">
+                                <td>165</td>
+                                <td>^ù</td>
+                                <td>Quote</td>
+                                <td></td>
+                                <td>ù</td>
+                            </tr>
+                            <!-- ROW-197 -->
+                            <tr class="RowTable">
+                                <td>166</td>
+                                <td>BrowserBack</td>
+                                <td></td>
+                                <td></td>
+                                <td>browser page backward</td>
+                            </tr>
+                            <!-- ROW-198 -->
+                            <tr class="RowTable">
+                                <td>167</td>
+                                <td>BrowserForward</td>
+                                <td></td>
+                                <td></td>
+                                <td>browser page forward</td>
+                            </tr>
+                            <!-- ROW-199 -->
+                            <tr class="RowTable">
+                                <td>168</td>
+                                <td>BrowserRefresh</td>
+                                <td></td>
+                                <td></td>
+                                <td>browser refresh</td>
+                            </tr>
+                            <!-- ROW-200 -->
+                            <tr class="RowTable">
+                                <td>169</td>
+                                <td>)</td>
+                                <td>Minus</td>
+                                <td></td>
+                                <td>closing paren (AZERTY)</td>
+                            </tr>
+
+                            <!-- ROW-201 -->
+                            <tr class="RowTable">
+                                <td>170</td>
+                                <td>*</td>
+                                <td>Backslash</td>
+                                <td></td>
+                                <td>*</td>
+                            </tr>
+
+                            <!-- ROW-202 -->
+                            <tr class="RowTable">
+                                <td>171</td>
+                                <td>+</td>
+                                <td>BracketRight</td>
+                                <td></td>
+                                <td>~ + * key</td>
+                            </tr>
+
+                            <!-- ROW-203 -->
+                            <tr class="RowTable">
+                                <td>172</td>
+                                <td>|</td>
+                                <td></td>
+                                <td></td>
+                                <td>home key, pipe key</td>
+                            </tr>
+
+                            <!-- ROW-204 -->
+                            <tr class="RowTable">
+                                <td>173</td>
+                                <td>-</td>
+                                <td>Minus</td>
+                                <td></td>
+                                <td>minus (firefox), mute/unmute</td>
+                            </tr>
+
+                            <!-- ROW-205 -->
+                            <tr class="RowTable">
+                                <td>174</td>
+                                <td>AudioVolumeDown</td>
+                                <td></td>
+                                <td></td>
+                                <td>decrease volume level</td>
+                            </tr>
+
+                            <!-- ROW-206 -->
+                            <tr class="RowTable">
+                                <td>175</td>
+                                <td>AudioVolumeUp</td>
+                                <td></td>
+                                <td></td>
+                                <td>increase volume level</td>
+                            </tr>
+
+                            <!-- ROW-207 -->
+                            <tr class="RowTable">
+                                <td>176</td>
+                                <td>MediaTrackNext</td>
+                                <td>MediaTrackNext</td>
+                                <td></td>
+                                <td>next</td>
+                            </tr>
+
+                            <!-- ROW-208 -->
+                            <tr class="RowTable">
+                                <td>177</td>
+                                <td>MediaTrackPrevious</td>
+                                <td>MediaTrackPrevious</td>
+                                <td></td>
+                                <td>previous</td>
+                            </tr>
+
+                            <!-- ROW-209 -->
+                            <tr class="RowTable">
+                                <td>178</td>
+                                <td>MediaStop</td>
+                                <td></td>
+                                <td></td>
+                                <td>stop</td>
+                            </tr>
+
+                            <!-- ROW-210 -->
+                            <tr class="RowTable">
+                                <td>179</td>
+                                <td>MediaPlayPause</td>
+                                <td></td>
+                                <td></td>
+                                <td>play/pause</td>
+                            </tr>
+
+                            <!-- ROW-211 -->
+                            <tr class="RowTable">
+                                <td>180</td>
+                                <td>LaunchMail</td>
+                                <td></td>
+                                <td>✉</td>
+                                <td>e-mail</td>
+                            </tr>
+
+                            <!-- ROW-212 -->
+                            <tr class="RowTable">
+                                <td>181</td>
+                                <td>AudioVolumeMute</td>
+                                <td>VolumeMute</td>
+                                <td></td>
+                                <td>mute/unmute (firefox)</td>
+                            </tr>
+
+                            <!-- ROW-213 -->
+                            <tr class="RowTable">
+                                <td>182</td>
+                                <td>AudioVolumeDown</td>
+                                <td>VolumeDown</td>
+                                <td></td>
+                                <td>decrease colume level (firefox)</td>
+                            </tr>
+
+                            <!-- ROW-214 -->
+                            <tr class="RowTable">
+                                <td>183</td>
+                                <td>AudioVolumeUp</td>
+                                <td>VolumeUp</td>
+                                <td></td>
+                                <td>increase volume level (firefox)</td>
+                            </tr>
+
+                            <!-- ROW-215 -->
+                            <tr class="RowTable">
+                                <td>186</td>
+                                <td>;</td>
+                                <td>Semicolon</td>
+                                <td></td>
+                                <td>semi-colon / ñ</td>
+                            </tr>
+
+                            <!-- ROW-216 -->
+                            <tr class="RowTable">
+                                <td>186</td>
+                                <td>¶</td>
+                                <td>Semicolon</td>
+                                <td>¶</td>
+                                <td>pilcrow</td>
+                            </tr>
+
+                            <!-- ROW-217 -->
+                            <tr class="RowTable">
+                                <td>186</td>
+                                <td>…</td>
+                                <td>Semicolon</td>
+                                <td>…</td>
+                                <td>ellipsis</td>
+                            </tr>
+
+                            <!-- ROW-218 -->
+                            <tr class="RowTable">
+                                <td>187</td>
+                                <td>=</td>
+                                <td>Equal</td>
+                                <td></td>
+                                <td>equal sign</td>
+                            </tr>
+
+                            <!-- ROW-219 -->
+                            <tr class="RowTable">
+                                <td>187</td>
+                                <td>±</td>
+                                <td>Equal</td>
+                                <td>±</td>
+                                <td>plus multiply</td>
+                            </tr>
+                            <!-- ROW-220 -->
+                            <tr class="RowTable">
+                                <td>187</td>
+                                <td>×</td>
+                                <td>Equal</td>
+                                <td>×</td>
+                                <td>multiply</td>
+                            </tr>
+
+                            <!-- ROW-221 -->
+                            <tr class="RowTable">
+                                <td>187</td>
+                                <td>≠</td>
+                                <td>Equal</td>
+                                <td>≠</td>
+                                <td>not equal</td>
+                            </tr>
+
+
+                            <!-- ROW-222 -->
+                            <tr class="RowTable">
+                                <td>188</td>
+                                <td>,</td>
+                                <td>Comma</td>
+                                <td></td>
+                                <td>comma</td>
+                            </tr>
+                            <!-- ROW-223 -->
+                            <tr class="RowTable">
+                                <td>188</td>
+                                <td>ç</td>
+                                <td>Comma</td>
+                                <td>ç</td>
+                                <td>c cedilla</td>
+                            </tr>
+
+                            <!-- ROW-224 -->
+                            <tr class="RowTable">
+                                <td>188</td>
+                                <td>≥</td>
+                                <td>Comma</td>
+                                <td>≥</td>
+                                <td>greater than or equal</td>
+                            </tr>
+
+                            <!-- ROW-225 -->
+                            <tr class="RowTable">
+                                <td>189</td>
+                                <td>-</td>
+                                <td>Minus</td>
+                                <td></td>
+                                <td>dash</td>
+                            </tr>
+                            <!-- ROW-226 -->
+                            <tr class="RowTable">
+                                <td>189</td>
+                                <td>–</td>
+                                <td>Minus</td>
+                                <td>–</td>
+                                <td>dash</td>
+                            </tr>
+                            <!-- ROW-227 -->
+                            <tr class="RowTable">
+                                <td>189</td>
+                                <td>_</td>
+                                <td>Minus</td>
+                                <td>_</td>
+                                <td>underscore</td>
+                            </tr>
+                            <!-- ROW-228 -->
+                            <tr class="RowTable">
+                                <td>190</td>
+                                <td>.</td>
+                                <td>Period</td>
+                                <td></td>
+                                <td>period</td>
+                            </tr>
+                            <!-- ROW-229 -->
+                            <tr class="RowTable">
+                                <td>190</td>
+                                <td>></td>
+                                <td>Period</td>
+                                <td>></td>
+                                <td>greater than</td>
+                            </tr>
+                            <!-- ROW-230 -->
+                            <tr class="RowTable">
+                                <td>190</td>
+                                <td>≤</td>
+                                <td>Period</td>
+                                <td>≤</td>
+                                <td>less than or equal</td>
+                            </tr>
+
+                            <!-- ROW-231 -->
+                            <tr class="RowTable">
+                                <td>191</td>
+                                <td>/</td>
+                                <td>Slash</td>
+                                <td></td>
+                                <td>forward slash / ç</td>
+                            </tr>
+
+                            <!-- ROW-232 -->
+                            <tr class="RowTable">
+                                <td>191</td>
+                                <td>?</td>
+                                <td>Slash</td>
+                                <td>?</td>
+                                <td>question mark</td>
+                            </tr>
+
+                            <!-- ROW-233 -->
+                            <tr class="RowTable">
+                                <td>191</td>
+                                <td>¿</td>
+                                <td>Slash</td>
+                                <td>¿</td>
+                                <td>inverted question mark</td>
+                            </tr>
+
+                            <!-- ROW-234 -->
+                            <tr class="RowTable">
+                                <td>191</td>
+                                <td>÷</td>
+                                <td>Slash</td>
+                                <td>÷</td>
+                                <td>division</td>
+                            </tr>
+                            <!-- ROW-235 -->
+                            <tr class="RowTable">
+                                <td>192</td>
+                                <td>`</td>
+                                <td>Backquote</td>
+                                <td></td>
+                                <td>Backtick / grave accent / ñ / æ / ö / § / ±</td>
+                            </tr>
+
+                            <!-- ROW-236 -->
+                            <tr class="RowTable">
+                                <td>192</td>
+                                <td>Dead</td>
+                                <td>IntlBackslash</td>
+                                <td></td>
+                                <td>Backtick / grave accent / ñ / æ / ö / § / ±</td>
+                            </tr>
+                            <!-- ROW-237 -->
+                            <tr class="RowTable">
+                                <td>193</td>
+                                <td>/</td>
+                                <td>IntlRo</td>
+                                <td></td>
+                                <td>?, / or °</td>
+                            </tr>
+                            <!-- ROW-238 -->
+                            <tr class="RowTable">
+                                <td>194</td>
+                                <td>.</td>
+                                <td>NumpadComma</td>
+                                <td></td>
+                                <td>numpad period (chrome)</td>
+                            </tr>
+
+                            <!-- ROW-239 -->
+                            <tr class="RowTable">
+                                <td>219</td>
+                                <td>[</td>
+                                <td>BrackeLeft</td>
+                                <td></td>
+                                <td>open bracket</td>
+                            </tr>
+
+                            <!-- ROW-240 -->
+                            <tr class="RowTable">
+                                <td>219</td>
+                                <td>{</td>
+                                <td>BracketLeft</td>
+                                <td>{</td>
+                                <td>braces left</td>
+                            </tr>
+                            <!-- ROW-241 -->
+                            <tr class="RowTable">
+                                <td>219</td>
+                                <td>«</td>
+                                <td>BracketLeft</td>
+                                <td>«</td>
+                                <td>left guillemet</td>
+                            </tr>
+                            <!-- ROW-242 -->
+                            `<tr class="RowTable">
+                                <td>219</td>
+                                <td>”</td>
+                                <td>BracketLeft</td>
+                                <td></td>
+                                <td>right double quotation</td>
+                            </tr>
+
+                            <!-- ROW-243 -->
+                            <tr class="RowTable">
+                                <td>219</td>
+                                <td>“</td>
+                                <td>BrackeLeft</td>
+                                <td></td>
+                                <td>inverted double quotation</td>
+                            </tr>
+
+                            <!-- ROW-244-->
+                            <tr class="RowTable">
+                                <td>220</td>
+                                <td>\</td>
+                                <td>Backslash</td>
+                                <td></td>
+                                <td>back slash</td>
+                            </tr>
+
+                            <!-- ROW-245 -->
+                            <tr class="RowTable">
+                                <td>220</td>
+                                <td>¬</td>
+                                <td>Backslash</td>
+                                <td>¬</td>
+                                <td>logical negation</td>
+                            </tr>
+                            <!-- ROW-246 -->
+                            <tr class="RowTable">
+                                <td>221</td>
+                                <td>]</td>
+                                <td>BracketRight</td>
+                                <td></td>
+                                <td>close bracket / å</td>
+                            </tr>
+
+                            <!-- ROW-247-->
+                            <tr class="RowTable">
+                                <td>221</td>
+                                <td>}</td>
+                                <td>BracketRight</td>
+                                <td>}</td>
+                                <td>braces right</td>
+                            </tr>
+
+                            <!-- ROW-248 -->
+                            <tr class="RowTable">
+                                <td>221</td>
+                                <td>»</td>
+                                <td>BracketRight</td>
+                                <td>»</td>
+                                <td>right guillemet</td>
+                            </tr>
+
+                            <!-- ROW-249 -->
+                            <tr class="RowTable">
+                                <td>222</td>
+                                <td>'</td>
+                                <td>Quote</td>
+                                <td></td>
+                                <td>single quote / ø / ä</td>
+                            </tr>
+
+                            <!-- ROW-250-->
+                            <tr class="RowTable">
+                                <td>222</td>
+                                <td>"</td>
+                                <td>Quote</td>
+                                <td>"</td>
+                                <td>double quote</td>
+                            </tr>
+
+                            <!-- ROW-251 -->
+                            <tr class="RowTable">
+                                <td>222</td>
+                                <td>´</td>
+                                <td>Quote</td>
+                                <td>´</td>
+                                <td>accent</td>
+                            </tr>
+                            <!-- ROW-252-->
+                            <tr class="RowTable">
+                                <td>223</td>
+                                <td>`</td>
+                                <td>Backquote</td>
+                                <td></td>
+                                <td>`</td>
+                            </tr>
+
+                            <!-- ROW-253 -->
+                            <tr class="RowTable">
+                                <td>224</td>
+                                <td>Meta</td>
+                                <td>OSLeft</td>
+                                <td>⌘</td>
+                                <td>left or right ⌘ key (firefox)</td>
+                            </tr>
+
+
+
+                            <!-- ROW-255-->
+                            <tr class="RowTable">
+                                <td>225</td>
+                                <td>AltGraph</td>
+                                <td>AltRight</td>
+                                <td>⎇ or ⌥</td>
+                                <td>altgr</td>
+                            </tr>
+
+                            <!-- ROW-256 -->
+                            <tr class="RowTable">
+                                <td>226</td>
+                                <td>\</td>
+                                <td>IntBlackslash</td>
+                                <td></td>
+                                <td>
+                                    < /git>, left back slash
+                                </td>
+                            </tr>
+                            <!-- ROW-257-->
+                            <tr class="RowTable">
+                                <td>229</td>
+                                <td>Dead</td>
+                                <td>Backquote</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <!-- ROW-258 -->
+                            <tr class="RowTable">
+                                <td>230</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>GNOME compose key</td>
+                            </tr>
+                            <!-- ROW-254 -->
+                            <tr class="RowTable">
+                                <td>231</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>ç</td>
+                            </tr>
+                            <!-- ROW-259 -->
+                            <tr class="RowTable">
+                                <td>233</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>XF86Forward / é</td>
+                            </tr>
+
+                            <!-- ROW-260 -->
+                            <tr class="RowTable">
+                                <td>234</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>XF86Back / ê</td>
+                            </tr>
+
+                            <!-- ROW-261 -->
+                            <tr class="RowTable">
+                                <td>235</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>non-conversion / ë</td>
+                            </tr>
+                            <!-- ROW-262 -->
+                            <tr class="RowTable">
+                                <td>240</td>
+                                <td>Alphamumeric</td>
+                                <td></td>
+                                <td></td>
+                                <td>alphanumeric / ð</td>
+                            </tr>
+                            <!-- ROW-263 -->
+                            <tr class="RowTable">
+                                <td>242</td>
+                                <td>HiraganaKatakana</td>
+                                <td></td>
+                                <td></td>
+                                <td>hiragana/katakana / ò</td>
+                            </tr>
+
+                            <!-- ROW-264 -->
+                            <tr class="RowTable">
+                                <td>243</td>
+                                <td>ZenkakuHankaku</td>
+                                <td></td>
+                                <td></td>
+                                <td>half-width/full-width / ó</td>
+                            </tr>
+
+                            <!-- ROW-265 -->
+                            <tr class="RowTable">
+                                <td>244</td>
+                                <td>KanjiMode</td>
+                                <td></td>
+                                <td></td>
+                                <td>kanji / ô</td>
+                            </tr>
+                            <!-- ROW-265 -->
+                            <tr class="RowTable">
+                                <td>251</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>unlock track pad (Chrome/Edge) / û</td>
+                            </tr>
+                            <!-- ROW-266 -->
+                            <tr class="RowTable">
+                                <td>255</td>
+                                <td>WakeUp</td>
+                                <td>WakeUp</td>
+                                <td></td>
+                                <td>WakeUp</td>
+                            </tr>
+                        </tbody>
+                        <!--END TABLE BODY-->
+                    </table>
+                    <!--END Table-->
+
+                </div>
+                <!-- Tabledata -->
+            </div>
+            <!-- End Col-1  ROW-1-->
+
+        </div>
+        <!-- End Row-2 -->
+
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="SearchData.js"></script>
+</body>
+
+</html>

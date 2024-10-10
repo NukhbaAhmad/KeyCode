@@ -1,0 +1,187 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid red; */
+    font-family: sans-serif system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgb(243,244,246);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#Header {
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 30px;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+}
+
+#KeyboardIcon {
+    font-size: 30px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+#Table {
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid white;
+    padding: 3px;
+    font-size: 19px;
+    width: 70px;
+    border-radius: 2px;
+}
+
+#Instructions {
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    height: 130px;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    border: 1px solid rgba(99, 99, 99, 0.1);
+    border-radius: 3px;
+}
+
+#JavascriptKeyCodeHeading {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+#KeyCode {
+    font-size: 130px;
+    margin: auto;
+    text-align: center;
+    /* width: 90%; */
+}
+
+#KeyCodeInformation {
+    margin: auto;
+    font-size: 14.5px;
+    /* width: 80%; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Title {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 1px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+.KeysDetails {
+    color: black;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 20px;
+    text-align: center;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.MetaKeysDetails {
+    color: black;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid rgb(204, 204, 204);
+    text-align: center;
+    height: 220px;
+    cursor: pointer;
+}
+#MetaKeysRow1{
+    justify-content: center;
+}
+.MetaKey{
+    padding-right:20px ;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 40px;
+    margin: 10px;
+    border-radius: 3px;
+}
+.ColoredMetaKeys{
+    color: rgb(0,0,0,0.5);
+    border: 1px solid rgb(0,0,0,0.5);
+}
+.ColoredMetaKeys:hover{
+    color: black;
+    font-size: 42px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+#EventDump{
+    font-size: 12px;
+    text-align: left;
+    height: 240px;
+}
+/* TABLE */
+.HeaderItem{
+    color: rgba(0,0,0,0.7);
+    text-align: start;
+}
+.RowTable{
+    font-size: 14px;
+    text-align: start;
+    color: rgba(0,0,0,0.8);
+    padding: 5px;
+}
+#TableHeading{
+    color:black;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3%;
+    padding: 10px;
+}
+#TableInfo{
+    background-color: rgb(255,245,227);
+    margin: auto;
+    font-size: 14px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#TableInfoIcon{
+    color: rgb(85, 45, 45);
+    font-size: 15px;
+    padding: 10px;
+    
+}
+#Input-field {
+    color: black;
+    width: 50%;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 15px;
+    outline: none;
+    font-size: 14px;
+}
+/* Search Field Hover */
+#Input-field:hover {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    outline: none;
+}

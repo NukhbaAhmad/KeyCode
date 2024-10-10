@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="Images/Keyboard-Title-Icon.jpg" class="img-fluid" type="image/x-icon">
+    <title>JavaScript KeyCode</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Keycode.css" />
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- FONTAWSOME ICONS -->
+    <script src="https://kit.fontawesome.com/1f4ff04947.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+        <!-- ROW-1 -->
+        <div class="row">
+            <!-- COL-1   -->
+            <div class="col-12" id="Header">
+
+                <!-- Heading-Name/Icon -->
+                <div>
+                    <span><i class="fa-regular fa-keyboard" id="KeyboardIcon"></i>
+                    </span>
+                    <span>KeyCoder</span>
+                </div>
+
+                <!-- Tables Button -->
+                <div>
+                    <a href="Table.html"><button id="Table">Table</button></a>
+                </div>
+
+            </div>
+            <!-- END COL-1 ROW-1 -->
+
+            <!-- COL-2 ROW-1-->
+            <div class="col-12">
+                <h1 id="JavascriptKeyCodeHeading" style="display:none"></h1>
+            </div>
+            <!-- END COL-2 ROW-1 -->
+
+
+            <!-- COL-3 ROW-1-->
+            <div class="col-12" id="Instructions">
+                <p>Press any key to get the JavaScript event Keycode info</p>
+            </div>
+            <!-- END COL-3 ROW-1-->
+
+        </div>
+
+        <!-- START ROW-2 -->
+        <div class="row m-auto" id="KeyInfoRows1" style="display:none">
+
+            <!-- COL-1 ROW-2 -->
+            <div class="col-12 m-auto">
+                <p id="KeyCode"></p>
+                <p id="KeyCodeInformation">Key Code Information</p>
+            </div>
+            <!-- END COL-1 ROW-2 -->
+        </div>
+        <!-- END ROW-2 -->
+
+
+
+
+
+
+        <!-- ROW-3 -->
+        <div class="row row-cols-1 row-cols-md-3" style="display:none" id="KeyInfoRows2">
+
+            <!-- EVENT.KEY -->
+            <div class="col m-auto">
+                <p class="Title">event.key</p>
+                <p id="KeyName" class="KeysDetails"></p>
+            </div>
+
+            <!-- EVENT.LOCATION -->
+            <div class="col m-auto">
+                <p class="Title">event.location</p>
+                <p id="EventLocation" class="KeysDetails"></p>
+            </div>
+
+            <!-- EVENT.CODE -->
+            <div class="col m-auto">
+                <p class="Title">event.code</p>
+                <p id="EventCode" class="KeysDetails"></p>
+            </div>
+
+            <!-- EVENT.WHICH -->
+            <div class="col m-auto">
+                <p class="Title">event.which</p>
+                <p id="EventWhich" class="KeysDetails"></p>
+            </div>
+
+
+            <!-- META_KEYS -->
+            <div class="col m-auto">
+                <p class="Title">Meta Keys -
+                    <span style="color:rgb(255,255,255,0.5);font-size:15px;">For General Information</span>
+                </p>
+                <div class="MetaKeysDetails">
+                    <div class="row row-col-1">
+                        <div class="col d-flex" id="MetaKeysRow1">
+                            <p id="WindowLinux" class="MetaKey ColoredMetaKeys">⌘</p>
+                            <p id="shift" class="MetaKey ColoredMetaKeys">⇧</p>
+                        </div>
+
+                        <div class="col d-flex" id="MetaKeysRow1">
+                            <p id="Alt" class="MetaKey ColoredMetaKeys">⌥
+                            </p>
+                            <p id="ctrl" class="MetaKey ColoredMetaKeys">^</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END META KEYS -->
+
+            <!-- EVENT DUMP -->
+            <div class="col m-auto">
+                <p class="Title">Event Dump</p>
+                <p id="EventDump" class="KeysDetails"></p>
+            </div>
+        </div>
+        <!-- END ROW-3 -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="Keycode.js"></script>
+</body>
+
+</html>
